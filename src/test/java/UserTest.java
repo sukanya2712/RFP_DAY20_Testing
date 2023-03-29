@@ -6,6 +6,7 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
+//UC10
 @RunWith(Parameterized.class)
 public class UserTest {
     String emailId;

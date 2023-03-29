@@ -2,6 +2,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class UserValidationTest {
+    //UC10
     static Pattern firstName= Pattern.compile("^[A-Z]{1}[a-z]{2,}");
     static Pattern lastName= Pattern.compile("^[A-Z]{1}[a-z]{2,}");
     static Pattern emailPattern = Pattern.compile("^[a-z0-9]{3,}([+-._]{1}[0-9]+)?@[a-z0-9]+[.]{1}[a-z]{2,}[,]?([.]{1}[a-z]{1,})?$");
