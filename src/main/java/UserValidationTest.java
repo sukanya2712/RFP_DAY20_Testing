@@ -46,13 +46,15 @@ public class UserValidationTest {
             return false;
         }
     }
-    public boolean checkEmail(String userEmail){
+    public boolean checkEmail(String userEmail) {
         Matcher matcher = emailPattern.matcher(userEmail);
-        if (matcher.matches()){
+        if (matcher.matches()) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
+
+
 
 }

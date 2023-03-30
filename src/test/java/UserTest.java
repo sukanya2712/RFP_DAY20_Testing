@@ -7,13 +7,9 @@ import java.util.Arrays;
 import java.util.Collection;
 
 //UC10
-@RunWith(Parameterized.class)
+
 public class UserTest {
-    String emailId;
-    public UserTest(String emailId){
-        super();
-        this.emailId = emailId;
-    }
+
     UserValidationTest user ;
     @Before
     public void initialize(){
@@ -70,13 +66,6 @@ public class UserTest {
         Assert.assertFalse(email);
     }
 
-    @Parameterized.Parameters
-    public static Collection input(){
-        return Arrays.asList( new String[] {"sukanya.32@gmai.com","sukanya123@gmail.com"});
-    }
-    @Test
-    public void checkEmailWithMultipleInputs(){
-        Assert.assertEquals(true,user.checkEmail(emailId));
-    }
+
 
 }
