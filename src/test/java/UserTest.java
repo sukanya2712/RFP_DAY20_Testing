@@ -72,7 +72,7 @@ public class UserTest {
 
     @Parameterized.Parameters
     public static Collection input(){
-        return Arrays.asList( new String[] {"sukanya.32@gmai.com","sukanya123@gmail.com"});
+        return Arrays.asList( new String[] {"sukanya.32@gmai.com","sukanya123@gmail.com","abc@yahoo.com","abc@abc.com.au","abc@1.com","abc+100@gmail.com","abc.9@gmail.com.com","abc-100@abc.net","abc-100@yahoo.com"});
     }
     @Test
     public void checkEmailWithMultipleInputs(){
